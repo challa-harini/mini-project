@@ -12,11 +12,12 @@ RUN cd client && npm install
 # Copy and build frontend 
 COPY client ./client 
 RUN cd client && npm run build 
+CMD ["npm","start"]
 
 # Copy and setup backend 
 COPY server ./server 
 RUN cd server && npm install 
 
 # Expose port and start backend 
-EXPOSE 5000 
+EXPOSE 3000 
 CMD ["node", "server/index.js"]
