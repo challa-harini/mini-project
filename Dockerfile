@@ -12,7 +12,6 @@ RUN cd client && npm install
 # Copy and build frontend 
 COPY client ./client 
 RUN cd client && npm run build 
-CMD ["npm","start"]
 
 # Copy and setup backend 
 COPY server ./server 
