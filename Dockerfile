@@ -20,5 +20,6 @@ RUN npm install
 
 # Expose port and start backend 
 EXPOSE 3000 
+WORKDIR /app/client
 CMD ["npm","start"]
 
