@@ -20,5 +20,5 @@ RUN npm install
 
 # Expose port and start backend 
 EXPOSE 3000 
-CMD ["npm","start"]
-
+EXPOSE 5000
+CMD ["sh", "-c", "npm start --prefix client & node server/index.js"]
