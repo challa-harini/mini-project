@@ -15,7 +15,7 @@ RUN cd client && npm run build
 
 # Copy and setup backend 
 COPY server ./server 
-RUN npm install 
+RUN cd server && npm install 
 
 # Expose port and start backend 
 EXPOSE 3000 
