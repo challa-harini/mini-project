@@ -15,7 +15,6 @@ RUN cd client && npm run build
 
 # Copy and setup backend 
 COPY server ./server 
-WORKDIR /app/server
 RUN npm install 
 
 # Expose port and start backend 
